@@ -71,12 +71,12 @@ function stop(e) {
 		result=2;
 	} else if (ran>0&&ran<2) {
 		result=3;
-	} else if (ran>1&&ran<40) {
+	} else if (ran>1&&ran<20) {
 		result=4;
 	} else if (ran>39&&ran<43) {
 		result=5;	
 	} else if (ran>42&&ran<44) {
-		result=5;
+		result=6;
 	}else {
 		result=1;
 	}
