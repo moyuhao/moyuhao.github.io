@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#choujiang {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 220px;
+	height: 70px;
+}
+
+#choutext {
+	font-weight: bold;
+	color: yellow;
+	background: red;
+	border: 2px solid #d77;
+	font-size: 30px;
+	display: block;
+	width: 200px;
+	height: 40px;
+	font-family: '黑体';
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+	margin: auto;
+}
+
+#chouUI {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	display: none;
+}
+
+#lunpan {
+	width: 372px;
+	background: red;
+	margin: 0 auto;
+}
+
+.jiangpin {
+	display: block;
+	width: 100px;
+	height: 100px;
+	float: left;
+	text-align: center;
+	background: #fd5;
+	font-size: 20px;
+	line-height: 100px;
+	font-family: '黑体';
+	font-weight: bold;
+	margin: 3px;
+	border: 8px solid red;
+
+}
+#choubtn {
+	display: block;
+	width: 100px;
+	height: 91px;
+	float: left;
+	text-align: center;
+	background: black;
+	font-size: 30px;
+	line-height: 43px;
+	font-family: '黑体';
+	font-weight: bold;
+	margin: 3px;
+	padding-top: 9px;
+	border: 8px solid red;
+	color: #f93;
+}
+
+.jp3{
+	padding-top: 20px;
+	line-height: 30px;
+	height: 80px;
+}
+
+.jp4{
+	padding-top: 20px;
+	line-height: 30px;
+	height: 80px;
+}
