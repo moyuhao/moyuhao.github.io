@@ -27,7 +27,8 @@ var xu=[0,1,2,4,7,6,5,3],
 	fuy=1,
 	cishu=0,
 	time=null,
-	time1=null;
+	time1=null,
+	time2=null;
 
 choubtn.onclick=start;
 
@@ -37,10 +38,8 @@ function start(e){
 	e.stopPropagetion?e.stopPropagetion():e.cancelBubble=true;
 	choubtn.innerHTML='Stop';
 	choubtn.onclick=stop;
-	choubtn.style.lineHeight='70px';
 	choubtn.style.background='#788';
 	choubtn.style.color='red';
-	choubtn.style.fontSize='47px';
 }
 
 function clock() {
@@ -61,22 +60,21 @@ function stop(e) {
 	e=e||window.event;
 	e.stopPropagetion?e.stopPropagetion():e.cancelBubble=true;
 	choubtn.onclick=null;
+	document.onclick=null;
 	choubtn.innerHTML='  ';
 	choubtn.style.background='black';
-	choubtn.style.lineHeight='43px';
 	choubtn.style.color='#f93';
-	choubtn.style.fontSize='30px';
 	ran=Math.floor(Math.random()*100);
-	if (ran>-1&&ran<1) {
+	if (ran>-1&&ran<50) {
 		result=2;
-	} else if (ran>0&&ran<2) {
-		result=3;
-	} else if (ran>1&&ran<20) {
-		result=4;
-	} else if (ran>39&&ran<43) {
-		result=5;	
-	} else if (ran>42&&ran<44) {
-		result=6;
+	} else if (ran>49&&ran<60) {
+		result=2;
+	} else if (ran>59&&ran<70) {
+		result=2;
+	} else if (ran>69&&ran<80) {
+		result=2;	
+	} else if (ran>79&&ran<90) {
+		result=2;
 	}else {
 		result=1;
 	}
@@ -100,59 +98,76 @@ function res() {
 		}else {
 			choubtn.innerHTML='再 来<br>一 次';
 			choubtn.onclick=start;
+			document.onclick=function () {
+				chouUI.style.display=null;
+				choujiang.style.display='block';
+				document.onclick=null;
+			}
+			var respic=document.getElementById('pic'+result);
+			respic.style.display='block';
 		}
 	},t);
 }
 	
-choutext.onclick=function (e) {
+choujiang.onclick=function (e) {
 	chouUI.style.display='block';
+	choujiang.style.display='none';
 	e=e||window.event;
 	e.stopPropagetion?e.stopPropagetion():e.cancelBubble=true;
 	document.onclick=function () {
 		chouUI.style.display=null;
+		choujiang.style.display='block';
 		document.onclick=null;
 	}
 }
 
-remo();
-function remo() {
-	time1=setInterval(function () {
-		var x=choujiang.offsetLeft,
-			y=choujiang.offsetTop;
-		if (x+1>=window.screen.availWidth-220&&fux>0) {
-			fux=-1;
-		} else if(x-1<=0&&fux<0){
-			fux=1;
-		}
-		x=x+fux;
-		if (y+4>=window.screen.availHeight-100&&fuy>0) {
-			fuy=-1;
-		} else if(y-4<=0&&fuy<0){
-			fuy=1;
-		}
-		y=y+0.9*fuy;
-		choujiang.style.top=y+'px';
-		choujiang.style.left=x+'px';
-	},10);	
-}
+// remo();
+// function remo() {
+// 	var availw=window.document.body.scrollWidth,
+// 		availh=window.document.body.scrollHeight;
+// 	if (availw>460) {
+// 		clearInterval(time1);
+// 		time1=setInterval(function () {
+// 			var x=choujiang.offsetLeft,
+// 				y=choujiang.offsetTop;
+// 			if (x+1>=availw-220&&fux>0) {
+// 				fux=-1;
+// 			} else if(x-1<=0&&fux<0){
+// 				fux=1;
+// 			}
+// 			x=x+fux;
+// 			if (y+4>=availh-100&&fuy>0) {
+// 				fuy=-1;
+// 			} else if(y-4<=0&&fuy<0){
+// 				fuy=1;
+// 			}
+// 			y=y+0.9*fuy;
+// 			choujiang.style.top=y+'px';
+// 			choujiang.style.left=x+'px';
+// 		},10);	
+// 	}	
+// }
 
-setInterval(function () {
-		if (chan==1) {
-			chan=2;
-			choutext.style.color='yellow';
-			choutext.style.background='red';
-		} else {
-			chan=1;
-			choutext.style.color='red';
-			choutext.style.background='yellow';
-		}
-},1000)
+// changecolor();
+// function changecolor() {
+// 	clearInterval(time2);
+// 	time2=setInterval(function () {
+// 			if (chan==1) {
+// 				chan=2;
+// 				choutext.style.color='yellow';
+// 				choutext.style.background='red';
+// 			} else {
+// 				chan=1;
+// 				choutext.style.color='red';
+// 				choutext.style.background='yellow';
+// 			}
+// 	},1000)
+// }
+	
 
-choutext.onmouseover=function () {
-	clearInterval(time1);
-}
-choutext.onmouseout=function () {
-	remo();
-}
-
-
+// choujiang.onmouseover=function () {
+// 	clearInterval(time1);
+// }
+// choujiang.onmouseout=function () {
+// 	remo();
+// }

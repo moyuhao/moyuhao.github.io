@@ -1,112 +1,68 @@
 *{
 	margin: 0;
-	padding: 0;
 	border: none;
+	padding: 0;
 }
 
-#choujiang {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 220px;
-	height: 70px;
-}
-
-#choutext {
-	font-weight: bold;
-	color: yellow;
-	background: red;
-	border: 2px solid #d77;
-	font-size: 30px;
-	display: block;
-	width: 200px;
-	height: 40px;
-	font-family: '黑体';
-	font-weight: bold;
-	text-align: center;
-	line-height: 40px;
-	margin: auto;
-}
-
-#chouUI {
+.g-container {
 	position: absolute;
-	top: 30px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	width: 460px;
+	height: 230px;
+}
+
+.image {
+	width:90px;
+	height: 90px;
+	margin: 17px auto 10px;
+	display: block;
+	border-radius: 50%;
+}
+
+hr {
+	border: 1px inset #fff0f5;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.navlink+.navlink{
+	border-left: 1px inset #fff0f5;
+}
+
+.navlink {
+	text-decoration: none;
+	display: block;
+	width: 24%;
+	background: white;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color: #6A5ACD;
+}
+
+p {
+	display: block;
 	width: 100%;
-	display: none;
-}
-
-#lunpan {
-	width: 372px;
-	background: red;
-	margin: 0 auto;
-}
-
-.jiangpin {
-	display: block;
-	width: 100px;
-	height: 100px;
-	float: left;
 	text-align: center;
-	background: #fd5;
-	font-size: 20px;
-	line-height: 100px;
-	font-family: '黑体';
+	color: #6A5ACD;
 	font-weight: bold;
-	margin: 3px;
-	border: 8px solid red;
-
-}
-#choubtn {
-	display: block;
-	width: 100px;
-	height: 91px;
-	float: left;
-	text-align: center;
-	background: black;
-	font-size: 30px;
-	line-height: 43px;
-	font-family: '黑体';
-	font-weight: bold;
-	margin: 3px;
-	padding-top: 9px;
-	border: 8px solid red;
-	color: #f93;
+	font-family: "微软雅黑";
 }
 
-.jp3{
-	padding-top: 20px;
-	line-height: 30px;
-	height: 80px;
+a:hover {
+	text-decoration: underline;
+	color: #7D26CD;
 }
 
-.jp4{
-	padding-top: 20px;
-	line-height: 30px;
-	height: 80px;
+@media screen and (max-width: 460px) {
+.g-container{
+	width: 100%;
 }
 
-#pic1 {
-
-}
-
-#pic2 {
-	width: 200px;
-	height: 160px;
-	background: url(picture/iphone6.JPG);
-}
-
-#pic3 {
-	
-}
-
-#pic4 {
-	
-}
-
-#pic5 {
-	
-}
-
-#pic6 {
-	
 }
