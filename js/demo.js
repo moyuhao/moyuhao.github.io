@@ -121,53 +121,53 @@ choujiang.onclick=function (e) {
 	}
 }
 
-// remo();
-// function remo() {
-// 	var availw=window.document.body.scrollWidth,
-// 		availh=window.document.body.scrollHeight;
-// 	if (availw>460) {
-// 		clearInterval(time1);
-// 		time1=setInterval(function () {
-// 			var x=choujiang.offsetLeft,
-// 				y=choujiang.offsetTop;
-// 			if (x+1>=availw-220&&fux>0) {
-// 				fux=-1;
-// 			} else if(x-1<=0&&fux<0){
-// 				fux=1;
-// 			}
-// 			x=x+fux;
-// 			if (y+4>=availh-100&&fuy>0) {
-// 				fuy=-1;
-// 			} else if(y-4<=0&&fuy<0){
-// 				fuy=1;
-// 			}
-// 			y=y+0.9*fuy;
-// 			choujiang.style.top=y+'px';
-// 			choujiang.style.left=x+'px';
-// 		},10);	
-// 	}	
-// }
+remo();
+function remo() {
+	var availw=window.document.body.scrollWidth,
+		availh=window.document.body.scrollHeight;
+	if (availw>460) {
+		clearInterval(time1);
+		time1=setInterval(function () {
+			var x=choujiang.offsetLeft,
+				y=choujiang.offsetTop;
+			if (x+1>=availw-220&&fux>0) {
+				fux=-1;
+			} else if(x-1<=0&&fux<0){
+				fux=1;
+			}
+			x=x+fux;
+			if (y+4>=availh-100&&fuy>0) {
+				fuy=-1;
+			} else if(y-4<=0&&fuy<0){
+				fuy=1;
+			}
+			y=y+0.9*fuy;
+			choujiang.style.top=y+'px';
+			choujiang.style.left=x+'px';
+		},10);	
+	}	
+}
 
-// changecolor();
-// function changecolor() {
-// 	clearInterval(time2);
-// 	time2=setInterval(function () {
-// 			if (chan==1) {
-// 				chan=2;
-// 				choutext.style.color='yellow';
-// 				choutext.style.background='red';
-// 			} else {
-// 				chan=1;
-// 				choutext.style.color='red';
-// 				choutext.style.background='yellow';
-// 			}
-// 	},1000)
-// }
+changecolor();
+function changecolor() {
+	clearInterval(time2);
+	time2=setInterval(function () {
+			if (chan==1) {
+				chan=2;
+				choutext.style.color='yellow';
+				choutext.style.background='red';
+			} else {
+				chan=1;
+				choutext.style.color='red';
+				choutext.style.background='yellow';
+			}
+	},1000)
+}
 	
 
-// choujiang.onmouseover=function () {
-// 	clearInterval(time1);
-// }
-// choujiang.onmouseout=function () {
-// 	remo();
-// }
+choujiang.onmouseover=function () {
+	clearInterval(time1);
+}
+choujiang.onmouseout=function () {
+	remo();
+}
