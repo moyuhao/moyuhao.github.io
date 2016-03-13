@@ -65,16 +65,16 @@ function stop(e) {
 	choubtn.style.background='black';
 	choubtn.style.color='#f93';
 	ran=Math.floor(Math.random()*100);
-	if (ran>-1&&ran<50) {
+	if (ran>=-1&&ran<16) {
 		result=2;
-	} else if (ran>49&&ran<60) {
-		result=2;
-	} else if (ran>59&&ran<70) {
-		result=2;
-	} else if (ran>69&&ran<80) {
-		result=2;	
-	} else if (ran>79&&ran<90) {
-		result=2;
+	} else if (ran>=16&&ran<32) {
+		result=3;
+	} else if (ran>=32&&ran<48) {
+		result=4;
+	} else if (ran>=48&&ran<64) {
+		result=5;	
+	} else if (ran>=64&&ran<80) {
+		result=6;
 	}else {
 		result=1;
 	}
@@ -82,6 +82,24 @@ function stop(e) {
     cishu=0;
     res();
     
+}
+
+
+picwid();
+function picwid() {
+	var availw=window.document.body.scrollWidth,
+		norwid=356;
+	if (availw<460) {
+		norwid=availw-20;
+	}
+	for (var i = 6; i > 0; i--) {
+		var picture=document.getElementById('pic'+i);
+			picw=picture.style.width,
+			pich=picture.style.height;
+		picture.style.width=norwid+'px';
+		picture.style.width=norwid/picw*pich+'px';
+	}
+
 }
 
 function res() {
@@ -98,13 +116,20 @@ function res() {
 		}else {
 			choubtn.innerHTML='再 来<br>一 次';
 			choubtn.onclick=start;
-			document.onclick=function () {
-				chouUI.style.display=null;
-				choujiang.style.display='block';
-				document.onclick=null;
-			}
-			var respic=document.getElementById('pic'+result);
+			var respic=document.getElementById('pic'+result);	
 			respic.style.display='block';
+			chouUI.style.display='none';
+			respic.onclick=function (e) {
+				respic.style.display='none';
+				e=e||window.event;
+				e.stopPropagetion?e.stopPropagetion():e.cancelBubble=true;
+				chouUI.style.display='block';
+				document.onclick=function () {
+					chouUI.style.display=null;
+					choujiang.style.display='block';
+					document.onclick=null;
+				}
+			}
 		}
 	},t);
 }
