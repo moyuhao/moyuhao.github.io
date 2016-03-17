@@ -230,3 +230,47 @@ p+p {
 		margin: 0 auto;
 	}
 }
+
+@media screen and (max-width: 600px){
+	.middle {
+		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 470px){
+	.nav-bar {
+		width: 395px;
+		display: block;
+		margin: 20px auto 0px;
+		float: none;
+	}
+	.nav-bar:after {
+		content: " ";
+		display: block;
+		visibility: hidden;
+		clear: both;
+	}
+
+	.header {
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 417px){
+	.nav-bar {
+		width: 314px;
+		margin-top: 10px;
+	}
+
+	.nav-bar a{
+		font-size: 10px;
+	}
+
+	.nav-bar li{
+		height: 27px;
+		line-height: 27px;
+	}
+	.header {
+		height: 40px;
+	}
+}
