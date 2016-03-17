@@ -142,6 +142,7 @@ choujiang.onclick=function (e) {
 	document.onclick=function () {
 		chouUI.style.display=null;
 		choujiang.style.display='block';
+		choujiang.style.top='100px';
 		document.onclick=null;
 	}
 }
@@ -163,7 +164,7 @@ function remo() {
 			x=x+fux;
 			if (y+4>=availh-100&&fuy>0) {
 				fuy=-1;
-			} else if(y-4<=0&&fuy<0){
+			} else if(y-4<=90&&fuy<0){
 				fuy=1;
 			}
 			y=y+0.9*fuy;
