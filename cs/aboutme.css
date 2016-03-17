@@ -155,7 +155,7 @@ body {
 }
 
 .middle {
-	width: 87%;
+	width: 90%;
 	margin:0 auto;
 	padding: 60px 15px 30px;
 }
@@ -230,6 +230,9 @@ p+p {
 		width: 120px;
 		height: 24px;
 		margin: 0 auto;
+	}
+	.middle {
+		width: 95%;
 	}
 }
 
