@@ -127,6 +127,7 @@ function res() {
 				document.onclick=function () {
 					chouUI.style.display=null;
 					choujiang.style.display='block';
+					choujiang.style.top='100px';
 					document.onclick=null;
 				}
 			}
