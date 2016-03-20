@@ -1,0 +1,451 @@
+* {
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html body {
+	width: 100%;
+}
+
+.header1,.header2,.mid1,.mid2,.mid3,.bottom{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.header1 {
+	height: 48px;
+	margin: 0 auto;
+	padding: 23px 0 19px;
+}
+
+.logo {
+	width: 134px;
+	height: 44px;
+	padding-left: 150px;
+	float: left;
+}
+
+.btn {
+	width: 48px;
+	height: 35px;
+	float: left;
+	border-left: 1px solid #c1c4cb;
+	border-top: 1px solid #c1c4cb;
+	border-bottom: 1px solid #c1c4cb;
+	background: url(../picture/qqbg.png);
+	background-position: -877px -199px;
+	color: #a8a8a8;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 35px;
+	padding: 0 10px;
+
+}
+
+.container {
+	float: left;
+	padding: 4px 0 3px 50px;
+	position: relative;
+}
+
+.container:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+
+.down-m {
+	display: none;
+	margin-top: 30px;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	list-style: none;
+	border-right: 1px solid #c1c4cb;
+	border-left: 1px solid #c1c4cb;
+	border-bottom: 1px solid #c1c4cb;
+}
+
+.down-m li {
+	display: block;
+	background: #fff;
+	padding-left: 11px;
+	line-height: 35px;
+	width: 48px;
+	height: 35px;
+}
+
+.inputtext {
+	float: left;
+	width: 183px;
+	height: 35px;
+	border-top: 1px solid #c1c4cb;
+	border-bottom: 1px solid #c1c4cb;
+}
+
+.icon {
+	display: block;
+	float: left;
+	width: 23px;
+	height: 23px;
+	padding: 6px 6px;
+	border-top: 1px solid #c1c4cb;
+	border-bottom: 1px solid #c1c4cb;
+}
+
+.inputenter {
+	float: left;
+	width: 90px;
+	height: 37px;
+	background: url(../picture/sogouSearchBtn.png);
+}
+
+.g-icon {
+	float: right;
+	padding: 4px 7px 3px 0;
+}
+
+.g-icon a {
+	display: block;
+	height: 24px;
+	float: left;
+	text-indent: 17px;
+	padding: 7px 8px 6px;
+	background-position: center center;
+}
+
+.g-icon a:hover {
+	background-position: center center;
+}
+
+.weibo {
+	width: 17px;
+	background: url(http://mat1.gtimg.com/www/images/qq2012/weiboIcon.png) no-repeat;
+}
+
+.weibo:hover {
+	background: url(http://mat1.gtimg.com/www/images/qq2012/weiboIconHover.png) no-repeat;
+}
+
+.qzone {
+	width: 25px;
+	background: url(http://mat1.gtimg.com/www/images/qq2012/qzoneIcon.png) no-repeat;
+}
+
+.qzone:hover {
+	background: url(http://mat1.gtimg.com/www/images/qq2012/qzoneIconHover.png) no-repeat;
+}
+
+.mail {
+	width: 21px;
+	background: url(http://mat1.gtimg.com/www/images/qq2012/mailIcon.png) no-repeat;
+}
+
+.mail:hover {
+	background: url(http://mat1.gtimg.com/www/images/qq2012/mailIconHover.png) no-repeat;
+}
+
+.dyqq {
+	width: 22px;
+	background: url(http://mat1.gtimg.com/www/images/qq2012/dyIcon.png) no-repeat;
+}
+
+.dyqq:hover {
+	background: url(http://mat1.gtimg.com/www/images/qq2012/dyIconHover.png) no-repeat;
+}
+
+.g-icon .login {
+	width: 35px;
+	height: 35px;
+	border: 1px solid #ededed;
+	padding: 0;
+	background: url(http://mat1.gtimg.com/www/images/qq2012/loginGrayIcon.png);
+	background-position: -155px -1px;
+}
+
+.g-icon .login:hover {
+	background-position: -155px -1px;
+	border: 1px solid #bbbbed;
+}
+
+.header2 {
+	width: 973px;
+	height: 57px;
+	padding: 8px 0 0 27px;
+	background: url("http://mat1.gtimg.com/www/images/qq2012/chanelNavBeta2_141013.jpg") no-repeat;
+}
+
+.header2:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.title {
+	display: block;
+	float: left;
+}
+
+.title td>a {
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 'STHeiti','Microsoft YaHei','宋体','arial';
+	line-height: 22px;
+	color: #fff;
+}
+
+.title a:hover{
+	background: #eef;
+	color: blue;
+}
+
+.title td+td {
+	padding-left: 8px;
+}
+
+.title+.title {
+	padding-left: 38px;
+}
+
+.mid1 {
+	margin-top: 12px;
+}
+
+.mid1:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+
+.left {
+	width: 700px;
+	float: left;
+}
+
+.ad1 {
+	display: block;
+	width: 700px;
+	height: 75px;
+	background: url(../picture/ad1.JPG);
+}
+
+.l-left {
+	width: 350px;
+	float: left;
+}
+
+.mid-h {
+	width: 350px;
+	height: 34px;
+	border-top: 1px solid #ccccff;
+	margin-top: 12px;
+	padding-top: 6px;
+}
+
+.tianqi {
+	width: 90px;
+	height: 25px;
+	float: right;
+	margin-top: -4px;
+}
+
+.mid-h a{
+	text-decoration: none;
+	text-align: center;
+	font-size: 17px;
+	color: #00aeee;
+	font-weight: bold;
+	padding: 6px 17px 0;
+}
+
+.left .sel {
+	border-top: 2px solid blue;
+}
+
+.left li{
+	list-style: none;
+}
+
+.left li a{
+	color: #444;
+	font-size: 17px;
+	line-height: 28px;
+}
+
+.left li a:hover {
+	color: #c71585;
+	text-decoration: underline;
+}
+
+.div-title{
+	color: #444;
+	font-size: 17px;
+	line-height: 30px;
+}
+
+.left div a:hover {
+	text-decoration: underline;
+}
+
+.h1-d1,.h1-d2,.h2-d1,.h2-d2 {
+	width: 350px;
+	height: 80px;
+	margin:10px 0;
+}
+
+.div-title {
+	position: relative;
+	bottom: 50px;
+}
+
+.h2-content{
+	display: none;
+}
+
+.h1-content{
+	display: block;
+}
+
+.l-right {
+	float: right;
+	width: 330px;
+}
+
+.left li .cate {
+	color: #999;
+}
+
+.left li .cate:hover {
+	color:  #999;
+}
+
+.left h3 a{
+	color: blue;
+}
+
+#d-app {
+	display: block;
+	padding-left: 16px;
+	padding-top: 0px;
+	float: right;
+	font-size: 16px;
+	background: url(http://mat1.gtimg.com/www/images/qq2012/kbicon.png) no-repeat;
+	background-position: 0 4px;
+}
+
+.left .l-right div {
+	width: 330px;
+}
+
+.right {
+	width: 280px;
+	float: right;
+}
+
+.ad2 {
+	display: block;
+	width: 280px;
+	height: 75px;
+	background: url(../picture/ad2.JPG);
+}
+
+.productNav {
+	width: 248px;
+	height: 237px;
+	padding-right: 30px;
+	background: url(http://mat1.gtimg.com/www/images/qq2012/productNavBg1.5.516.png) no-repeat right top;
+	margin-top: 12px;
+}
+
+.productNav div{
+	width: 248px;
+	padding: 10px 0 0 10px;
+	background-color: transparent;
+}
+
+.productNav .product1{height: 26px;}
+.productNav .product2{height: 27px;}
+.productNav .product3{height: 60px;line-height: 28px;padding-top: 4px;}
+.productNav .product4{height: 59px;line-height: 28px;padding-top: 3px;}
+.productNav .product5{height: 29px;padding-top: 10px;}
+
+
+
+.productNav a {
+	font: 14px "arial","Arial Narrow",HELVETICA;
+	color: #294c7f;
+	background-color: transparent;
+}
+
+.productNav a+a {
+	margin-left: 14px;
+}
+
+.left #ad4 {
+	display: block;
+	width: 700px;
+	height: 90px;
+	margin-top: 14px;
+	float: left;
+}
+
+.ad3 {
+	display: block;
+	width: 280px;
+	height: 321px;
+	margin-top: 20px;
+}
+
+.ad5 {
+	display: block;
+	width: 280px;
+	height: 192px;
+	margin-top: 16px;
+}
+
+.ad6 {
+	display: block;
+	width: 280px;
+	height: 192px;
+	margin-top: 16px;
+}
+
+.ad7 {
+	display: block;
+	width: 280px;
+	height: 92px;
+	margin-top: 16px;
+}
+
+.ad8 {
+	display: block;
+	width: 1000px;
+	height: 92px;
+	margin-top: 14px;
+}
+
+.hh1 {width: 800px;}
+.hh2 {width: 935px;}
+.hh3 {width: 785px;}
+.hh4 {width: 265px;}
+.hype {margin: 10px auto;}
+
+.hype a {
+	font-size: 12px;
+	color: black;
+}
+
+.bot {
+	display: block;
+	width: 122px;
+	height: 55px;
+	float: left;
+	margin: 20px 10px;
+}

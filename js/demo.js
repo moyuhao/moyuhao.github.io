@@ -127,7 +127,7 @@ function res() {
 				document.onclick=function () {
 					chouUI.style.display=null;
 					choujiang.style.display='block';
-					choujiang.style.top='100px';
+					choujiang.style.top='200px';
 					document.onclick=null;
 				}
 			}
@@ -143,7 +143,7 @@ choujiang.onclick=function (e) {
 	document.onclick=function () {
 		chouUI.style.display=null;
 		choujiang.style.display='block';
-		choujiang.style.top='100px';
+		choujiang.style.top='200px';
 		document.onclick=null;
 	}
 }

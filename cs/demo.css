@@ -7,7 +7,7 @@
 #choujiang {
 	position: fixed;
 	left: 0;
-	top: 100px;
+	top: 200px;
 	width: 220px;
 	height: 70px;
 }
@@ -79,6 +79,20 @@
 	display: none;
 	margin:0 auto;
 }
+.demo-page{
+	width: 150px;
+	height: 80px;
+	float: left;
+	background: #ccc;
+	margin:10px;
+	padding: 20px 30px 20px 50px;
+	font-family: "幼圆";
+	font-weight: bold;
+}
+
+.demo-page a{
+	color: blue;
+}
 
 @media screen and (max-width: 460px){
 		.jiangpin {
@@ -104,3 +118,6 @@
 		top: 20%;
 	}
 }
+
+
+
