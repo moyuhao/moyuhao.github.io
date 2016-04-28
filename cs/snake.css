@@ -27,3 +27,31 @@ body {
 	font-size: 40px;
 	font-family: "微软雅黑";
 }
+
+.touch {
+	display: block;
+	width: 370px;
+	margin: 90px auto;
+}
+
+.touch tr {
+	margin:0;
+	padding:0;
+	border: 0;
+}
+
+.touch td {
+	display: block;
+	width: 120px;
+	height: 120px;
+	background: #777;
+	float: left;
+	border: 1px solid green;
+	margin:0;
+	padding:0;
+}
+
+.touch .blank{
+	background: #fff;
+	border: 1px solid #fff;
+}

@@ -4,6 +4,10 @@ var can1=document.getElementById('can1'),
 	canH=can1.height,
 	btn1=document.getElementById('btn1'),
 	scr=document.getElementById('scr'),
+	touu=document.getElementById('up'),
+	toul=document.getElementById('left'),
+	tour=document.getElementById('right'),
+	toud=document.getElementById('down'),
 	timer,
 	xk,
 	yk,
@@ -158,4 +162,47 @@ function canin() {
 	ctx1.lineTo(600,0);
 	ctx1.stroke();
 	ctx1.restore();
+}
+
+touu.onclick=function () {
+	tou(38);
+}
+tour.onclick=function () {
+	tou(39);
+}
+toud.onclick=function () {
+	tou(40);
+}
+toul.onclick=function () {
+	tou(37);
+}
+
+
+function tou(key) {
+	switch (key){
+		case 37:
+		if (xk!=1&&yk!=0) {
+			xk=-1;
+			yk=0;
+		}
+		break;
+		case 38:
+		if (xk!=0&&yk!=1) {
+			xk=0;
+			yk=-1;
+		}
+		break;
+		case 39:
+		if (xk!=-1&&yk!=0) {
+			xk=1;
+			yk=0;
+		}
+		break;
+		case 40:
+		if (xk!=0&&yk!=-1) {
+			xk=0;
+			yk=1;
+		}
+		break;
+	}
 }
