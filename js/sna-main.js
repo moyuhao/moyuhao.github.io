@@ -164,16 +164,16 @@ function canin() {
 	ctx1.restore();
 }
 
-touu.onclick=function () {
+touu.onmousedown=function () {
 	tou(38);
 }
-tour.onclick=function () {
+tour.onmousedown=function () {
 	tou(39);
 }
-toud.onclick=function () {
+toud.onmousedown=function () {
 	tou(40);
 }
-toul.onclick=function () {
+toul.onmousedown=function () {
 	tou(37);
 }
 
