@@ -9,6 +9,7 @@ var can1=document.getElementById('can1'),
 	tour=document.getElementById('right'),
 	toud=document.getElementById('down'),
 	timer,
+	test1=new Image(),
 	xk,
 	yk,
 	score,
@@ -30,6 +31,8 @@ function init() {
 	fruit=new fruitObj();
 	fruit.init();
 	fruit.draw();
+
+	test1.src='picture/fishsrc/fruit.png';
 }
 
 btn1.onclick=function () {

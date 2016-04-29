@@ -28,19 +28,19 @@ body {
 	font-family: "微软雅黑";
 }
 
-.touch {
+#touch {
 	display: block;
 	width: 370px;
 	margin: 90px auto;
 }
 
-.touch tr {
+#touch tr {
 	margin:0;
 	padding:0;
 	border: 0;
 }
 
-.touch td {
+#touch td {
 	display: block;
 	width: 120px;
 	height: 120px;
@@ -51,7 +51,17 @@ body {
 	padding:0;
 }
 
-.touch .blank{
+#touch .blank{
 	background: #fff;
 	border: 1px solid #fff;
 }
+
+/*#touch {
+	display: none;
+}
+
+@media screen and (max-width: 460px){
+	#touch {
+		display: block;
+	}
+}*/
