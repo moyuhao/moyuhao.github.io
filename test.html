@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	
+	</style>
 <body>
-	<p></p>
-
-
+	<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample">
+	  Link with href
+	</a>
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+	  Button with data-target
+	</button>
+	<div class="collapse" id="collapseExample">
+	  <div class="well">
+	    ...
+	  </div>
+	</div>
 	<script src="js/jquery-2.2.2.min.js"></script>
-	<script>
-		$('p').innerHTML = 'hello world';
-	</script>
+	<script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
