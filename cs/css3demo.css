@@ -1,12 +1,5 @@
-*{
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-
 body{
 	background-color:#eee;
-	padding-top: 70px;
 }
 
 h1{
@@ -14,8 +7,8 @@ h1{
 }
 
 .container{
-	width:1060px; 
-	height:500px; 
+	width:960px; 
+	height:450px; 
 	margin:60px auto; 
 	position:relative;
 }
@@ -59,7 +52,7 @@ h1{
 .pic3
 {
 	bottom: 0; 
-	right: 50px; 
+	right: 0; 
 	-webkit-transform: rotate(5deg); 
 	-moz-transform: rotate(5deg); 
 	transform: rotate(5deg);
@@ -76,8 +69,8 @@ h1{
 
 .pic5
 {
-	bottom: 50px; 
-	left: 50px; 
+	bottom: 0; 
+	left: 0; 
 	-webkit-transform: rotate(-10deg); 
 	-moz-transform: rotate(-10deg); 
 	transform: rotate(-10deg);
@@ -85,8 +78,8 @@ h1{
 
 .pic6
 {
-	top: 50px; 
-	left:50px; 
+	top: 0; 
+	left:0; 
 	-webkit-transform: rotate(10deg); 
 	-moz-transform: rotate(10deg); 
 	transform: rotate(10deg);
@@ -94,8 +87,8 @@ h1{
 
 .pic7
 {
-	top: 50px; 
-	left: 750px; 
+	top: 0; 
+	left: 850px; 
 	-webkit-transform: rotate(20deg); 
 	-moz-transform: rotate(20deg); 
 	transform: rotate(20deg);
